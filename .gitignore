@@ -13,6 +13,7 @@ web/scripts
 web/sites/default/default.settings.php
 web/sites/all
 web/sites/example.sites.php
+*.pyc
 
 # Ignore our checksums directory
 .checksums
