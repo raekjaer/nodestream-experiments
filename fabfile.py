@@ -19,7 +19,7 @@ def build():
     """
     Build this project.
     """
-    local("drush make platform.make web")
+    local("drush make --working-copy platform.make web")
     save_sums()
     # If you have more things that you want to do, you can just add more
     # commands here.
