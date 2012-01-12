@@ -1,4 +1,4 @@
-B1;2802;0c; $Id$
+$Id$
 
 ; API
 
@@ -8,9 +8,15 @@ api = 2
 
 core = 7.x
 
-; Drupal projects
+; Drupal project.
 projects[drupal] = 7.10
-projects[nodestream] = 2.0-alpha4
+
+; This is the dev version, so we point to the dev version of NodeStream.
+projects[nodestream][type] = profile
+projects[nodestream][download][type] = git
+projects[nodestream][download][url] = http://git.drupal.org/project/nodestream
+projects[nodestream][download][branch] = 7.x-2.x
+
 
 ; We point to our own installation profile here.
 ; This profile is the one that we actually are going to use.
