@@ -7,7 +7,7 @@ from __future__ import with_statement
 from fabric.api import local, settings, abort, run
 from fabric.contrib.console import confirm
 from os import path, mkdir
-
+from time import time
 
 # Rebuilding takes time so we probably want to
 # avoid doing it unnecessarily. In order to avoid unnecessary rebuilds,
@@ -19,7 +19,17 @@ def build():
     """
     Build this project.
     """
-    local("drush make --working-copy platform.make web")
+    # Save any old build
+    if path.isdir('web'):
+        local('mv web web-old')
+    local('drush make --working-copy platform.make web')
+    # Move all sites from the old web directory to the new one.
+    if path.isdir('web-old'):
+        local('rm -rf web-old/sites/all')
+        local('mv web/sites/all web-old/sites/.')
+        local('rm -rf web/sites')
+        local('mv web-old/sites web/sites')
+        local('rm -rf web-old')
     save_sums()
     # If you have more things that you want to do, you can just add more
     # commands here.
