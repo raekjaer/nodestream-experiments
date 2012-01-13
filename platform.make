@@ -1,4 +1,4 @@
-$Id$
+B1;2802;0c$Id$
 
 ; API
 
@@ -7,6 +7,7 @@ api = 2
 ; Core
 
 core = 7.x
+
 
 ; Drupal project.
 projects[drupal] = 7.9
