@@ -17,3 +17,5 @@ web/sites/example.sites.php
 
 # Ignore our checksums directory
 .checksums
+nbproject
+nbproject/*
