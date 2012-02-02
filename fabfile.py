@@ -22,6 +22,7 @@ def build():
     # Save any old build
     if path.isdir('web'):
         local('mv web web-old')
+        local('chmod -R +w web-old/sites')
     local('drush make --working-copy platform.make web')
     # Move all sites from the old web directory to the new one.
     if path.isdir('web-old'):
@@ -48,7 +49,6 @@ def rebuild():
         print "This project does not have build yet. Building..."
         build()
     elif not check_build():
-        clean()
         build()
     else:
         print "Rebuild not necessary."
