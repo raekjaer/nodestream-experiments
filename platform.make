@@ -1,4 +1,4 @@
-B1;2802;0c$Id$
+$Id$
 
 ; API
 
@@ -10,7 +10,7 @@ core = 7.x
 
 
 ; Drupal project.
-projects[drupal] = 7.10
+projects[drupal] = 7.12
 
 ; This is the dev version, so we point to the dev version of NodeStream.
 projects[nodestream][type] = profile
