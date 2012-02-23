@@ -1,0 +1,5 @@
+#!/bin/bash
+mkdir $WORKSPACE/tests-$BUILD_NUMBER
+cd web/sites/$SITE
+drush ns-core-devel-enable
+drush test-run NodeStream --xml=$WORKSPACE/tests-$BUILD_NUMBER
