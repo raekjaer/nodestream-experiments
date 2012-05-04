@@ -10,7 +10,7 @@ core = 7.x
 
 
 ; Drupal project.
-projects[drupal] = 7.12
+projects[drupal] = 7.14
 
 ; This is the dev version, so we point to the dev version of NodeStream.
 projects[nodestream][type] = profile
