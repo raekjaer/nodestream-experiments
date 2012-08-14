@@ -12,13 +12,6 @@ core = 7.x
 ; Drupal project.
 projects[drupal] = 7.15
 
-; This is the dev version, so we point to the dev version of NodeStream.
-projects[nodestream][type] = profile
-projects[nodestream][download][type] = git
-projects[nodestream][download][url] = http://git.drupal.org/project/nodestream
-projects[nodestream][download][branch] = 7.x-2.x
-
-
 ; We point to our own installation profile here.
 ; This profile is the one that we actually are going to use.
 projects[ns_example_profile][type] = profile
