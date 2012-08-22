@@ -16,7 +16,6 @@ projects[drupal] = 7.15
 ; This profile is the one that we actually are going to use.
 projects[ns_example_profile][type] = profile
 projects[ns_example_profile][download][type] = git
-projects[ns_example_profile][download][url] = git@github.com:nodeone/profile-ns_example_profile.git
 projects[ns_example_profile][download][branch] = 7.x-2.x
 
 ; You can add as many other profiles as you want, and develop them
