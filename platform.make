@@ -10,7 +10,7 @@ core = 7.x
 
 
 ; Drupal project.
-projects[drupal] = 7.15
+projects[drupal] = 7.18
 
 ; We point to our own installation profile here.
 ; This profile is the one that we actually are going to use.
