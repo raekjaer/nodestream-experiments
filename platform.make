@@ -14,10 +14,6 @@ projects[drupal] = 7.18
 
 ; We point to our own installation profile here.
 ; This profile is the one that we actually are going to use.
-projects[nodestream][type] = profile
-projects[nodestream][download][type] = git
-projects[nodestream][download][branch] = 7.x-2.x
-
 projects[ns_example_profile][type] = profile
 projects[ns_example_profile][download][type] = git
 projects[ns_example_profile][download][branch] = 7.x-2.x
